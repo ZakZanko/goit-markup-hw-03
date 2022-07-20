@@ -16,10 +16,14 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ECECEC;
 }
-.container-header{
+.container-header {
   display: flex;
-  align-items: center;
+  text-align: center;
+}
+.container-hero {
+  text-align: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -39,7 +43,7 @@
 /* Container */
 .container {
   width: 1200px;
-  margin-left: auto;
+  margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -61,12 +65,6 @@ body {
   list-style-type: none;
   margin-right: 50px;
   margin-left: 50px;
-}
-.nav-item:first-child{
-  margin-left: 0;
-}
-.nav-item:last-child{
-  margin-right: 0;
 }
 .nav-link {
   font-weight: 500;
@@ -123,6 +121,8 @@ body {
 .main {
 }
 .header-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: var(--background-hero-footer-color);
 }
 .caption {
@@ -135,6 +135,7 @@ body {
   width: 696px;
   margin: auto;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* Кнопка */
 .btn {
@@ -149,7 +150,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 0.06em;
-  max-width: 136px;
+  width: 200px;
+  height: 50px;
 }
 .btn:hover,
 .btn:focus {
@@ -165,9 +167,9 @@ body {
 }
 .soft-skills {
   margin-right: 30px;
-  width:270px ;
+  width: 270px;
 }
-.soft-skills:last-child{
+.soft-skills:last-child {
   margin-right: 0;
 }
 .soft-caption {
@@ -202,12 +204,9 @@ body {
 .occupation-list {
   list-style-type: none;
   display: flex;
+  column-gap: 30px;
 }
 .occupation-item {
-  margin-right: 30px;
-}
-.occupation-item:last-child{
-  margin-right: 0;
 }
 /* Наша Команда */
 .team {
@@ -233,17 +232,15 @@ body {
 }
 .team-list {
   list-style-type: none;
-  display:flex;
+  display: flex;
+  column-gap: 30px;
 }
 .team-iteam {
   margin-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-margin-right: 30px;
-text-align: center;
-}
-.team-iteam:last-child{
-  margin-right: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 .team-text {
   font-size: 16px;
@@ -255,7 +252,8 @@ text-align: center;
 /* Footer */
 .footer {
   background-color: var(--background-hero-footer-color);
-  padding: 60px 1240px 161px 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-title {
   font-family: "Raleway", sans-serif;
@@ -266,18 +264,15 @@ text-align: center;
   color: var(--first-text-color);
   text-decoration: none;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 .footer-address {
 }
 .footer-list {
   list-style-type: none;
+  margin-top: 20px;
 }
 .footer-iteam {
-  margin-top: 10px;
-}
-.footer-iteam:first-child{
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 .map-link {
   font-style: normal;
@@ -322,14 +317,18 @@ text-align: center;
 .portfolio-main {
 }
 .portfolio-nav {
+}
 
-}
-.portfolio-nav-list{
-  gap: 8px;
-}
 .portfolio-nav-list {
   list-style-type: none;
   display: flex;
+  column-gap: 8px;
+  margin: auto;
+  justify-content: center;
+  width: 611px;
+}
+.portfolio-btn-centr {
+  justify-content: space-between;
 }
 .portfolio-nav-item {
   font-weight: 500;
@@ -344,14 +343,17 @@ text-align: center;
 /* IMG Portfolio */
 .portfolio-list-img {
   list-style-type: none;
-  gap:30px;
-}
-.portfolio-images{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 .portfolio-item {
-width: calc((100%-90px)/4);
+  padding-bottom: 20px;
+  width: 370px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-head {
   font-weight: 700;
@@ -359,12 +361,15 @@ width: calc((100%-90px)/4);
   line-height: 2;
   color: var(--first-background-color);
   letter-spacing: 0.06em;
+  padding: 20px 24px 4px;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--second-text-color);
   letter-spacing: 0.03em;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .map-link:hover,
 .map-link:focus {
@@ -399,7 +404,7 @@ ul {
   padding-left: 0;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
